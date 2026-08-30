@@ -5,28 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Dr. Asta Agasarova | Medical Aesthetics</title>
-  <meta name="description" content="Dr. Asta Agasarova - Medical Aesthetics">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <meta
+    name="description"
+    content="Dr. Asta Agasarova - Medical Aesthetics"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicon-32x32.png"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicon-16x16.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/apple-touch-icon.png"
+  >
+
+  <link
+    rel="shortcut icon"
+    href="/favicon.ico"
+  >
 
   <style>
     * {
       box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       min-height: 100%;
     }
 
     body {
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background: #f4f1ed;
       font-family: Arial, Helvetica, sans-serif;
       color: #292929;
@@ -35,17 +57,22 @@
     main {
       width: 100%;
       max-width: 900px;
-      padding: 40px 24px;
+      margin: 0 auto;
+      padding: 80px 24px 50px;
       text-align: center;
     }
+
+    /* Logo */
 
     .logo {
       display: block;
       width: 100%;
       max-width: 700px;
       height: auto;
-      margin: 0 auto 45px;
+      margin: 0 auto 70px;
     }
+
+    /* Coming soon */
 
     .coming-soon {
       margin: 0;
@@ -56,11 +83,21 @@
       color: #a58f70;
     }
 
+    .intro {
+      max-width: 580px;
+      margin: 18px auto 0;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #444444;
+    }
+
+    /* Instagram */
+
     .instagram {
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      margin-top: 28px;
+      margin-top: 26px;
 
       color: #a58f70;
       text-decoration: none;
@@ -76,23 +113,102 @@
       width: 19px;
       height: 19px;
       fill: currentColor;
+      flex-shrink: 0;
     }
 
     .instagram:hover {
       opacity: 0.6;
     }
 
+    /* Location */
+
+    .location {
+      margin-top: 60px;
+    }
+
+    .location h2 {
+      margin: 0 0 16px;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #a58f70;
+    }
+
+    .address {
+      margin: 0 0 25px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #292929;
+    }
+
+    /* Google Map */
+
+    .map {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .map iframe {
+      display: block;
+      width: 100%;
+      height: 350px;
+      border: 0;
+    }
+
+    /* Directions */
+
+    .directions {
+      display: inline-block;
+      margin-top: 20px;
+
+      color: #a58f70;
+      text-decoration: none;
+
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+
+      transition: opacity 0.2s ease;
+    }
+
+    .directions:hover {
+      opacity: 0.6;
+    }
+
+    /* Mobile */
+
     @media (max-width: 600px) {
       main {
-        padding: 30px 20px;
+        padding: 50px 20px 40px;
       }
 
       .logo {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
       }
 
       .coming-soon {
         font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .intro {
+        font-size: 13px;
+      }
+
+      .instagram {
+        font-size: 12px;
+      }
+
+      .location {
+        margin-top: 50px;
+      }
+
+      .map iframe {
+        height: 300px;
       }
     }
   </style>
@@ -101,32 +217,71 @@
 <body>
 
   <main>
+
     <img
       src="logo.png"
       alt="Dr. Asta Agasarova Medical Aesthetics"
       class="logo"
     >
 
-    <h1 class="coming-soon">Coming Soon</h1>
+    <h1 class="coming-soon">
+      New Website Coming Soon
+    </h1>
+
+    <p class="intro">
+      Our new website is currently under development.<br>
+      In the meantime, visit us on Instagram or find us below.
+    </p>
 
     <a
       class="instagram"
       href="https://www.instagram.com/dr.asta.agasarova/"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Follow Dr. Asta Agasarova on Instagram"
+      aria-label="Visit Dr. Asta Agasarova on Instagram"
     >
-    <svg
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-3.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/>
-    </svg>
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-3.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/>
+      </svg>
 
-    <span>Follow on Instagram</span>
-  </a>
-  
-</main>
+      <span>Visit Us on Instagram</span>
+    </a>
+
+    <section class="location">
+
+      <h2>Location</h2>
+
+      <p class="address">
+        St Fintan's, North St<br>
+        Balheary Demesne, Swords<br>
+        Co. Dublin, K67 HY44
+      </p>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.268986706144!2d-6.220376922324656!3d53.46365267232364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867115610682c5b%3A0x703f1719ead2f613!2sDr%20Asta%20Agasarova%20-%20Medical%20Aesthetics!5e0!3m2!1sit!2sie!4v1788125133639!5m2!1sit!2sie"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Dr Asta Agasarova - Medical Aesthetics location"
+        ></iframe>
+      </div>
+
+      <a
+        class="directions"
+        href="https://share.google/8BaGxkAh1vdzlswBK"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get Directions
+      </a>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
